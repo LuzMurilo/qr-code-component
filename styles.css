@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "outfit";
+    src: url("./fonts/Outfit-VariableFont_wght.ttf");
+}
+
+:root {
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+    margin: 0;
+}
+
+.attribution { font-size: 18px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.qr-code-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--slate-300);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 288px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 16px;
+    padding-bottom: 40px;
+    font-family: "outfit";
+}
+
+.qr-code-holder {
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.qr-code-holder img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--slate-900);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--slate-500);
+    text-align: center;
+}
